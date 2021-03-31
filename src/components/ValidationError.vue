@@ -24,6 +24,7 @@ export default {
     },
     methods: {
         hasValidationError(type) {
+            // eslint-disable-next-line no-prototype-builtins
             return this.validation.$params.hasOwnProperty(type) && !this.validation[type];
         }
     }

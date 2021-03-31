@@ -8,9 +8,13 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "font-awesome/css/font-awesome.min.css";
 import store from "./store";
 import router from "./router";
+import Vuelidate from "vuelidate";
 
 //Add Vue Filter for currency
 Vue.filter("currency", (value) => new Intl.NumberFormat("en-US", {style: "currency", currency: "USD"}).format(value));
+
+//Use Vuelidate
+Vue.use(Vuelidate);
 
 //Common mistake is to forget to add the import below in the configuration object which will result in error.
 new Vue({

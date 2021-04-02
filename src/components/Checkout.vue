@@ -73,11 +73,13 @@ export default {
         }
     },
     validations: {
-        name: { required },
-        email: { required, email },
-        address: { required },
-        city: { required },
-        zipZ: { required }
+        order: {
+            name: { required },
+            email: { required, email },
+            address: { required },
+            city: { required },
+            zip: { required }
+        }
     },
     methods: {
         ...mapActions({

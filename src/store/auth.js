@@ -28,7 +28,7 @@ export default {
     },
     actions: {
         async authenticate(context, credentials) {
-            let response = await Axios.post(loginUrl, credientials);
+            let response = await Axios.post(loginUrl, credentials);
             if (response.data.success == true) {
                 context.commit("setAuthenticated", response.data.token);
             }

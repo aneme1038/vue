@@ -3,6 +3,7 @@ import Vuex from "vuex";
 import Axios from "axios";
 import CartModule from "./cart";
 import OrdersModule from "./orders";
+import AuthModule from "./auth";
 /*
 It is important to note that plugins must be enabled using 'Vue.use' method.
 If you forget to call the 'use' method, 
@@ -27,7 +28,7 @@ and modify data values directly -- something that happens often as you become us
 */
 export default new Vuex.Store({
     strict: true,
-    modules: { cart: CartModule, orders: OrdersModule },
+    modules: { cart: CartModule, orders: OrdersModule, auth: AuthModule },
     state: {
         //products: [],
         categoriesData: [],

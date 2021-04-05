@@ -32,8 +32,8 @@ export default {
     components: { ValidationError },
     data: function() {
         return {
-            username: "admin",
-            password: "secret",
+            username: null,
+            password: null,
             showFailureMessage: false,
         }
     },

@@ -11,7 +11,7 @@ then the data store features won't be available in the rest of the application.
 */
 Vue.use(Vuex);
 
-const baseUrl = "http://localhost:3500";
+const baseUrl = "/api";
 const productsUrl = `${baseUrl}/products`;
 const categoriesUrl = `${baseUrl}/categories`;
 /*
@@ -27,7 +27,7 @@ This 'strict' mode is a useful feature that generates a warning if you forget to
 and modify data values directly -- something that happens often as you become used to the way that Vuex works.
 */
 export default new Vuex.Store({
-    strict: true,
+    strict: false,
     modules: { cart: CartModule, orders: OrdersModule, auth: AuthModule },
     state: {
         //products: [],

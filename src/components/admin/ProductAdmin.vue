@@ -26,7 +26,7 @@
 
 <script>
 import PageControls from "../PageControls";
-import { mapGetters, mapActions } from "vuex
+import { mapGetters, mapActions } from "vuex";
 
 export default {
     components: { PageControls },

@@ -12,6 +12,6 @@ app.use("/api", router);
 app.use(history());
 app.use("/", express.static("./dist"));
 
-app.listen(8080, function() {
-    console.log("Listening on Port 8080");
+app.listen(80, function() {
+    console.log("Listening on Port 80");
 })
